@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking css file from bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Linking External style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking css files for map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Linking Fontawesome -->
+    <script src="https://kit.fontawesome.com/21c3c449f4.js" crossorigin="anonymous"></script>
+    <title>Frontend Bootcamp</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- fixed-top: it fix the navbar at the top always even after scrolling dawn or up the page the navbar will always be at the 
+          top of the page
+          py-3: gives a padding top and padding bottom of 3% -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+        <div class="container-fluid nav-padding navbar-padding">
+            <a class="navbar-brand" href="#">Frontend Bootcamp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+              <ul class="navbar-nav ms-auto" >
+                <li class="nav-item"><a class="nav-link" href="#learn">What You'll Learn</a></li>
+                <li class="nav-item"><a class="nav-link" href="#questions">Question</a></li>
+                <li class="nav-item"><a class="nav-link" href="#instructor">Instructor</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase  -->
+    <!--    bg-dark: background Dark
+            text-light: to make text color white-->
+    <!--     
+            pt-1: Gives a padding top of 1px
+            pb-1: Gives a padding bottom of 1px
+            px-2 : Gives a padding left and right of 2px
+            py-2 : Gives a padding top and bottom of 2px
+            p-5: Gives a padding all side of 5px 
+            for more info refer: https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+    <!--    text-center: to align the text to center 
+            text-sm-start: align the text to right side untill the size of the screen is reduced less than or equal to mobile size-->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <!--    d-flex: display in flex 
+                    d-sm-flex: use the flex property untill display size is less than or equal to mobile screen
+                    align-items-center: align the content present in the flexbox at center, for more info see: https://www.w3schools.com/cssref/css3_pr_align-items.asp
+                    justify-content-between:- push the alongside content to either side and make the content present between them at between of the display screen, for more info refer:https://getbootstrap.com/docs/4.4/utilities/flex/
+                    -->
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1 >Become a <span class="text-warning">Web Developer</span></h1>
+                    <!--    lead: Bootstrap class to increase the size of text 
+                            my-4: add a margin-top and margin-bottom of 4%-->
+                    <p class="lead my-4" >We focus on teaching our students the fundamentals of the latest and greatest technogies to prepare them for their best dev role</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target=
+                    "#enroll">Start The Enrollment</button>
+                </div>
+                <!-- Images in Bootstrap are made responsive with .img-fluid .max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element. 
+                w-50: set the width of the image to 50%
+                d-none: don't display the content after a condition goes true.
+                d-sm-block: block the image when the size of the screen is less than or equal to mobile size
+                for ex:- in this case as the size of the display decreases to mobile screen size the image disappears due to d-none property-->
+                <img class="img-fluid w-50 d-sm-block d-none" src="image/showcase.svg" alt="Showcase-image"> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <!--  d-md-flex: use the flex property untill display size is less than or equal to medium screen  
+          mb-md-0: make the margin bottom to zero once the size of the screen reduces to medium size or less than that-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email">
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <!--  ms-5: gives a margin left of 5% 
+          me-5: gives a margin right of 5%
+          fa-2x: increases the font size to 2 times-->
+    <section class="Boxes ms-5 me-5">
+      <!-- Grid Method in Bootstrap -->
+        <div class="row ms-5 me-5">
+            <div class="col-lg-4 ">
+              <!-- Card method in Bootstarp -->
+              <div class="card bg-dark mt-5 mb-5">
+                <div class="card-body text-center">
+                    <i class="fas fa-laptop fa-2x text-light bg-dark p-3"></i>
+                    <h3 class="text-light bg-dark">Intro to Web-Dev</h3>
+                    <p class="text-light bg-dark ">Front-end web development is everything involved in programming the user interface of a web application. Typically it refers to the Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) and JavaScript portion of web site production as opposed to the database or server-side programming.</p>
+                    <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html"><button type="button" class="btn btn-primary">Read More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 ">
+              <!-- Card method in Bootstarp -->
+                <div class="card bg-secondary mt-5 mb-5">
+                  <div class="card-body text-center ">
+                      <i class="fas fa-user-alt fa-2x text-light p-3"></i>
+                      <h3 class="text-light ">Hybrid</h3>
+                      <p class="text-light ">Developers build hybrid apps using web technologies such as JavaScript, CSS and HTML.This allows the app to run through each platform’s embedded browser instead of the web browser, which means they can be installed on mobile devices and submitted to app stores for sale, just like regular native apps.</p>
+                      <a href="https://www.designrush.com/trends/hybrid-mobile-app-development"><button type="button" class="btn btn-dark">Read More</button></a>   
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-4 ">
+              <!-- Card method in Bootstarp -->
+                <div class="card bg-dark mt-5 mb-5 ">
+                  <div class="card-body text-center ">
+                      <i class="fas fa-user-friends fa-2x text-light bg-dark p-3"></i>
+                      <h3 class="text-light bg-dark">In Person</h3>
+                      <p class="text-light bg-dark ">To keep learning every tiny second of time, you have to challenge your capabilities. Take up a project which is well beyond your capabilities and stick to that project until you complete it. By the end of just 5-6 such projects you will found yourself almost proficient than others around you, even those professionals.</p>
+                      <a href="https://www.quora.com/What-is-the-best-way-to-practice-web-development"><button type="button" class="btn btn-primary">Read More</button></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </section>
+    
+    <!-- Learn Section -->
+    <section id="learn" class="p-5">
+        <div class="container">
+          <!-- Grid Method in Bootstrap -->
+          <div class="row align-items-center justify-center-content">
+            <div class="col-md">
+              <img src="image/fundamentals.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md p-5">
+              <h3>Learn The Fundamentals</h3>
+                  <p class="learn-p1">Frontend development stands firmly on three pillars: HTML for markup, CSS for styling and JavaScript for logic and interactions.</p>
+                  <p class="learn-p2">Front-End Fundamentals introduces the tools and fundamentals of front-end development practices and workflows. In the book we cover topics such as JavaScript frameworks, CSS styling, dependency management and task automation.</p>
+                  <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers"><button type="button" class="btn btn-light mt-3"><i class="fas fa-chevron-right"></i> Read More</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+          <div class="row align-items-center justify-center-content">
+            <div class="col-md p-5">
+              <h3>Learn React</h3>
+                <p>React is a JavaScript library for building modern applications. React is used for handling the view layer and can be used for development of both web and mobile applications.</p>
+                <p >React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.</p>
+                <a href="https://reactjs.org/"><button type="button" class="btn btn-light mt-3"><i class="fas fa-chevron-right"></i> Read More</button></a>
+            </div>
+            <div class="col-md">
+              <img src="image/react.svg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question Accordian -->
+      <section class=" px-5 m-5" id="questions">
+        <h3 class="text-center mb-5">Frequently Asked Questions</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  When will I have access to the lectures and assignments?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>Access to lectures and assignments depends on your type of enrollment. If you take a course in audit mode, you will be able to see most course materials for free. To access graded assignments and to earn a Certificate, you will need to purchase the Certificate experience, during or after your audit. If you don't see the audit option: 
+                </p>
+                  <ul>
+                    <li>The course may not offer an audit option. You can try a Free Trial instead, or apply for Financial Aid.</li>
+                    <li>The course may offer 'Full Course, No Certificate' instead. This option lets you see all course materials, submit required assessments, and get a final grade. This also means that you will not be able to purchase a Certificate experience.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  What will I get if I purchase the Certificate?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">When you purchase a Certificate you get access to all course materials, including graded assignments. Upon completing the course, your electronic Certificate will be added to your Accomplishments page - from there, you can print your Certificate or add it to your LinkedIn profile.  If you only want to read and view the course content, you can audit the course for free.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Will I earn university credit for completing the Course?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>This Course doesn't carry university credit, but some universities may choose to accept Course Certificates for credit. Check with your institution to learn more. 
+                      <a href="https://www.coursera.org/degrees?from=faq" target="_blank" rel="noopener">Online Degrees</a> and <a href="https://www.coursera.org/mastertrack?from=faq" target="_blank" rel="noopener">Mastertrack™ Certificates</a> on Coursera provide the opportunity to earn university credit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Is this course really 100% online? Do I need to attend any classes in person?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">This course is completely online, so there’s no need to show up to a classroom in person. You can access your lectures, readings and assignments anytime and anywhere via the web or your mobile device.</div>
+                </div>
+              </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  What will I be able to do upon completing the Web Design Specialization?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">You will be comfortable with the key terms and tools used in the web design world.  You will have the ability to create your own pages, and modify and critique existing sites.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Instructor section -->
+      <section id="instructor" class="bg-primary p-5">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructor</h2>
+            <p class="lead text-center text-white mb-5">Our instructors all have 15+ years working as a web developer in the industry</p>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="card bg-light ">
+                <div class="card-body text-center">
+                  <img src="image/Alana Layton.jpg" alt="Instructor picture of Alana Layton" class="rounded-circle mb-6"> 
+                  <h3 class="card-title mb-3 ">Alana Layton</h3>
+                  <p class="card-text">Alana is a Cloud Technologist based out of Seattle, WA and has been working at AWS for over two years. Outside of AWS, you can find her testing her knowledge at bar trivia, watching the latest true crime documentary, or training for a marathon.</p>
+                  <a href="https://twitter.com/lanalayt?lang=en"><i class="fab fa-twitter mx-2"></i></a>
+                  <a href="https://www.facebook.com/alana.layton.7"><i class="fab fa-facebook mx-2"></i></a>
+                  <a href="https://www.instagram.com/alannalayton21/?hl=en"><i class="fab fa-instagram mx-2"></i></a>
+                  <a href="https://www.linkedin.com/in/alanalayton/"><i class="fab fa-linkedin mx-2"></i></a>
+                </div>
+              </div>  
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="image/Jonathan Dion.jpg" alt="Instructor picture of Jonathan Dion" class="rounded-circle mb-6"> 
+                  <h3 class="card-title mb-3 ">Jonathan Dion</h3>
+                  <p class="card-text">Jonathan Dion is a senior technical instructor that has been working for AWS for over 2 years living in Toronto. Prior to teaching and lecturing for AWS customers, Jonathan was part of the Solutions Architect team and decided to become a technical instructor to share his passion for AWS and technology.</p>
+                  <a href="https://twitter.com/_jondion?lang=en"><i class="fab fa-twitter mx-2"></i></a>
+                  <a href="https://www.facebook.com/jonathan.dionne.35"><i class="fab fa-facebook mx-2"></i></a>
+                  <a href="https://www.instagram.com/dionjonathn/?hl=en"><i class="fab fa-instagram mx-2"></i></a>
+                  <a href="https://www.linkedin.com/in/jotdion/?originalSubdomain=ca"><i class="fab fa-linkedin mx-2"></i></a>
+                </div>
+              </div>  
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="image/Morgan Willis.jpg" alt="Instructor picture of Morgan Willis" class="rounded-circle mb-6"> 
+                  <h3 class="card-title mb-3 ">Morgan Willis</h3>
+                  <p class="card-text">Morgan Willis is a Senior Cloud Technologist based in the US. Morgan has a background in Software Development, technical training, and has earned 6 AWS Certifications. Morgan has always had a strong passion for technology, has a degree in computer science and has held various jobs throughout her IT career.</p>
+                  <a href="https://twitter.com/MorgantWillis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter mx-2"></i></a>
+                  <a href="https://www.facebook.com/morgan.wills.161"><i class="fab fa-facebook mx-2"></i></a>
+                  <a href="https://www.instagram.com/morganwillis/?hl=en"><i class="fab fa-instagram mx-2"></i></a>
+                  <a href="https://www.coursera.org/instructor/~37505720"><i class="fab fa-linkedin mx-2"></i></a>
+                </div>
+              </div>  
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img src="image/Sean Rinn.jpg" alt="Instructor picture of Sean Rinn" class="rounded-circle mb-6"> 
+                  <h3 class="card-title mb-3 ">Sean Rinn</h3>
+                  <p class="card-text">Sean has been with AWS just over 4 years. In that time, he has been both a Technical Trainer, and an Engineer working on tools used by the Training team. When he's not in front of a computer, he is doing his level best to be outside (much to the enjoyment of his dog, Chief)</p>
+                  <a href="https://twitter.com/s_rinn9?lang=en"><i class="fab fa-twitter mx-2"></i></a>
+                  <a href="https://www.facebook.com/sean.rinn.5"><i class="fab fa-facebook mx-2"></i></a>
+                  <a href="https://www.instagram.com/smrinn/"><i class="fab fa-instagram mx-2"></i></a>
+                  <a href="https://www.linkedin.com/in/seanrinn/"><i class="fab fa-linkedin mx-2"></i></a>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Contact & Map -->
+
+      <section class="p-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Contact Info </h2> 
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Headquarters:</span> 	Mountain View, California, U.S.
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Helpline Number:</span>  (800) 952-5210
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Student Phone: </span>  +91 6201984498
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Enrollment Email:</span>  coursera_official_contact@gmail.com
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Student Email:</span>  student_email@gmail.com
+                </li>
+              </ul>
+            </div>
+            <div class="col-md">
+               <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Footer -->
+      <footer class="p-5 bg-dark text-center text-white position-relative">
+        <div class="container">
+          <p class="lead">Copyright &Copy; 2021 Frontend Bootcamp</p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="fas fa-arrow-up"></i> </a>
+        </div>  
+      </footer>
+      <!-- NEW AND HARD -->
+      <!-- Modal -->
+      <div class="modal fade"  id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"> First Name: </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Linking JavaScript files of BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Linking JavaScript files of Mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script> mapboxgl.accessToken = 'pk.eyJ1IjoiYWRpdHlhLWt1bWFyLTEyOSIsImEiOiJja3Nzejh3OWYwNGdoMnBzMmJ0eWFxNTg0In0.wndZSDxRN7NMqWvAYZk0gA';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-122.083855,37.386051],  //longitude latitude
+      zoom:18,
+      });
+      </script>
+</body>
+</html>
