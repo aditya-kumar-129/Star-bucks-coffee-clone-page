@@ -1,386 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Linking css file from bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- Linking External style sheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Linking css files for map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <!-- Linking Fontawesome -->
-    <script src="https://kit.fontawesome.com/21c3c449f4.js" crossorigin="anonymous"></script>
-    <title>Frontend Bootcamp</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linking BootStrap css file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <!-- Linking Fontawesome -->
+   <script src="https://kit.fontawesome.com/21c3c449f4.js" crossorigin="anonymous"></script>
+  <!-- Linking External css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <!-- fixed-top: it fix the navbar at the top always even after scrolling dawn or up the page the navbar will always be at the 
-          top of the page
-          py-3: gives a padding top and padding bottom of 3% -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-        <div class="container-fluid nav-padding navbar-padding">
-            <a class="navbar-brand" href="#">Frontend Bootcamp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent" >
-              <ul class="navbar-nav ms-auto" >
-                <li class="nav-item"><a class="nav-link" href="#learn">What You'll Learn</a></li>
-                <li class="nav-item"><a class="nav-link" href="#questions">Question</a></li>
-                <li class="nav-item"><a class="nav-link" href="#instructor">Instructor</a></li>
-              </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Showcase  -->
-    <!--    bg-dark: background Dark
-            text-light: to make text color white-->
-    <!--     
-            pt-1: Gives a padding top of 1px
-            pb-1: Gives a padding bottom of 1px
-            px-2 : Gives a padding left and right of 2px
-            py-2 : Gives a padding top and bottom of 2px
-            p-5: Gives a padding all side of 5px 
-            for more info refer: https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
-    <!--    text-center: to align the text to center 
-            text-sm-start: align the text to right side untill the size of the screen is reduced less than or equal to mobile size-->
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-        <div class="container">
-            <!--    d-flex: display in flex 
-                    d-sm-flex: use the flex property untill display size is less than or equal to mobile screen
-                    align-items-center: align the content present in the flexbox at center, for more info see: https://www.w3schools.com/cssref/css3_pr_align-items.asp
-                    justify-content-between:- push the alongside content to either side and make the content present between them at between of the display screen, for more info refer:https://getbootstrap.com/docs/4.4/utilities/flex/
-                    -->
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1 >Become a <span class="text-warning">Web Developer</span></h1>
-                    <!--    lead: Bootstrap class to increase the size of text 
-                            my-4: add a margin-top and margin-bottom of 4%-->
-                    <p class="lead my-4" >We focus on teaching our students the fundamentals of the latest and greatest technogies to prepare them for their best dev role</p>
-                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target=
-                    "#enroll">Start The Enrollment</button>
-                </div>
-                <!-- Images in Bootstrap are made responsive with .img-fluid .max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element. 
-                w-50: set the width of the image to 50%
-                d-none: don't display the content after a condition goes true.
-                d-sm-block: block the image when the size of the screen is less than or equal to mobile size
-                for ex:- in this case as the size of the display decreases to mobile screen size the image disappears due to d-none property-->
-                <img class="img-fluid w-50 d-sm-block d-none" src="image/showcase.svg" alt="Showcase-image"> 
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <!--  d-md-flex: use the flex property untill display size is less than or equal to medium screen  
-          mb-md-0: make the margin bottom to zero once the size of the screen reduces to medium size or less than that-->
-    <section class="bg-primary text-light p-5">
-      <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
-          <div class="input-group news-input">
-            <input type="text" class="form-control" placeholder="Enter Email">
-            <button class="btn btn-dark btn-lg" type="button">Submit</button>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white mx-3 my-1 nav-2560">
+    <a class="navbar-brand" href="#">
+      <img src="images/Starbucks.svg" alt="Starbucks-logo" class="logo-img"  >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active me-1">
+          <a class="nav-link" href="#">MENU</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link" href="#">REWARD</a>
+        </li>
+        <li class="nav-item me-1">
+          <a class="nav-link" href="#">GIFT CARDS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mt-4 me-3">
+          <a href="#" class="nav-link" href="#" style="display: inline;"><i class="fas fa-map-marker-alt"></i> <a class="nav-link" href="#" style="display: inline;">Find a store</a></i></a>
+        </li>
+        <li class="nav-item">
+          <br>
+          <button type="button" class="btn btn-light btn-sm first-button me-3" style="color: black; border-radius: 25px;">Sign in</button>
+        </li>
+        <li class="nav-item">
+          <br>
+          <button type="button" class="btn btn-dark btn-sm second-button" style="border-radius: 25px;">Join now</button>
+        </li>
+    </div>
+  </nav>
+  
+  <hr style="margin: 0;">
+  <div class="div-2560">
+  <!-- 1st box element -->
+  <div class="container-fluid first-div mb-4">
+    <div class="first-box">
+      <div class="flex justify-center text-center py5">
+        <p class="first-para">Following CDC guidance, facial coverings are recommended in our stores for all customers, and are required where mandated by local law. <a href="#" class="first-link">Learn more</a></p> 
       </div>
-    </section>
+    </div>  
+  </div>
 
-    <!-- Boxes -->
-    <!--  ms-5: gives a margin left of 5% 
-          me-5: gives a margin right of 5%
-          fa-2x: increases the font size to 2 times-->
-    <section class="Boxes ms-5 me-5">
-      <!-- Grid Method in Bootstrap -->
-        <div class="row ms-5 me-5">
-            <div class="col-lg-4 ">
-              <!-- Card method in Bootstarp -->
-              <div class="card bg-dark mt-5 mb-5">
-                <div class="card-body text-center">
-                    <i class="fas fa-laptop fa-2x text-light bg-dark p-3"></i>
-                    <h3 class="text-light bg-dark">Intro to Web-Dev</h3>
-                    <p class="text-light bg-dark ">Front-end web development is everything involved in programming the user interface of a web application. Typically it refers to the Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) and JavaScript portion of web site production as opposed to the database or server-side programming.</p>
-                    <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html"><button type="button" class="btn btn-primary">Read More</button></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 ">
-              <!-- Card method in Bootstarp -->
-                <div class="card bg-secondary mt-5 mb-5">
-                  <div class="card-body text-center ">
-                      <i class="fas fa-user-alt fa-2x text-light p-3"></i>
-                      <h3 class="text-light ">Hybrid</h3>
-                      <p class="text-light ">Developers build hybrid apps using web technologies such as JavaScript, CSS and HTML.This allows the app to run through each platform’s embedded browser instead of the web browser, which means they can be installed on mobile devices and submitted to app stores for sale, just like regular native apps.</p>
-                      <a href="https://www.designrush.com/trends/hybrid-mobile-app-development"><button type="button" class="btn btn-dark">Read More</button></a>   
-                  </div>
-                </div>
-              </div>
-            <div class="col-lg-4 ">
-              <!-- Card method in Bootstarp -->
-                <div class="card bg-dark mt-5 mb-5 ">
-                  <div class="card-body text-center ">
-                      <i class="fas fa-user-friends fa-2x text-light bg-dark p-3"></i>
-                      <h3 class="text-light bg-dark">In Person</h3>
-                      <p class="text-light bg-dark ">To keep learning every tiny second of time, you have to challenge your capabilities. Take up a project which is well beyond your capabilities and stick to that project until you complete it. By the end of just 5-6 such projects you will found yourself almost proficient than others around you, even those professionals.</p>
-                      <a href="https://www.quora.com/What-is-the-best-way-to-practice-web-development"><button type="button" class="btn btn-primary">Read More</button></a>
-                  </div>
-                </div>
-            </div>
-          </div>
-    </section>
-    
-    <!-- Learn Section -->
-    <section id="learn" class="p-5">
-        <div class="container">
-          <!-- Grid Method in Bootstrap -->
-          <div class="row align-items-center justify-center-content">
-            <div class="col-md">
-              <img src="image/fundamentals.svg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md p-5">
-              <h3>Learn The Fundamentals</h3>
-                  <p class="learn-p1">Frontend development stands firmly on three pillars: HTML for markup, CSS for styling and JavaScript for logic and interactions.</p>
-                  <p class="learn-p2">Front-End Fundamentals introduces the tools and fundamentals of front-end development practices and workflows. In the book we cover topics such as JavaScript frameworks, CSS styling, dependency management and task automation.</p>
-                  <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers"><button type="button" class="btn btn-light mt-3"><i class="fas fa-chevron-right"></i> Read More</button></a>
-            </div>
+  <!-- 2nd box element -->
+  <div class="containr-fluid box-2">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/img-1.webp" alt="image-1" class="image-1">
+      </div>
+      <div class="col-md-6 second-div">
+        <div style="text-align: center;" class="box-content">
+            <h1 class="heading-second-box">Fall into an easier routine</h1>
+            <p class="para-second-box">Get your favorites, your way—order, pay and pick up with the app.</p>
+            <button type="button" class="btn btn-light first-button mt-4 second-div-botton">See pickup options</button>
           </div>
         </div>
-      </section>
-      <section id="learn" class="p-5 bg-dark text-light">
-        <div class="container">
-          <div class="row align-items-center justify-center-content">
-            <div class="col-md p-5">
-              <h3>Learn React</h3>
-                <p>React is a JavaScript library for building modern applications. React is used for handling the view layer and can be used for development of both web and mobile applications.</p>
-                <p >React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.</p>
-                <a href="https://reactjs.org/"><button type="button" class="btn btn-light mt-3"><i class="fas fa-chevron-right"></i> Read More</button></a>
-            </div>
-            <div class="col-md">
-              <img src="image/react.svg" class="img-fluid" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
 
-      <!-- Question Accordian -->
-      <section class=" px-5 m-5" id="questions">
-        <h3 class="text-center mb-5">Frequently Asked Questions</h3>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  When will I have access to the lectures and assignments?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>Access to lectures and assignments depends on your type of enrollment. If you take a course in audit mode, you will be able to see most course materials for free. To access graded assignments and to earn a Certificate, you will need to purchase the Certificate experience, during or after your audit. If you don't see the audit option: 
-                </p>
-                  <ul>
-                    <li>The course may not offer an audit option. You can try a Free Trial instead, or apply for Financial Aid.</li>
-                    <li>The course may offer 'Full Course, No Certificate' instead. This option lets you see all course materials, submit required assessments, and get a final grade. This also means that you will not be able to purchase a Certificate experience.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  What will I get if I purchase the Certificate?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">When you purchase a Certificate you get access to all course materials, including graded assignments. Upon completing the course, your electronic Certificate will be added to your Accomplishments page - from there, you can print your Certificate or add it to your LinkedIn profile.  If you only want to read and view the course content, you can audit the course for free.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Will I earn university credit for completing the Course?
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <p>This Course doesn't carry university credit, but some universities may choose to accept Course Certificates for credit. Check with your institution to learn more. 
-                      <a href="https://www.coursera.org/degrees?from=faq" target="_blank" rel="noopener">Online Degrees</a> and <a href="https://www.coursera.org/mastertrack?from=faq" target="_blank" rel="noopener">Mastertrack™ Certificates</a> on Coursera provide the opportunity to earn university credit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Is this course really 100% online? Do I need to attend any classes in person?
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">This course is completely online, so there’s no need to show up to a classroom in person. You can access your lectures, readings and assignments anytime and anywhere via the web or your mobile device.</div>
-                </div>
-              </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                  What will I be able to do upon completing the Web Design Specialization?
-                </button>
-              </h2>
-              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">You will be comfortable with the key terms and tools used in the web design world.  You will have the ability to create your own pages, and modify and critique existing sites.</div>
-              </div>
-            </div>
-          </div>
+  <!-- 3rd box element -->
+    <div class="container-fluid mt-4 third-box">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <img src="images/img-2.webp" alt="image-2" class="image-1 image-3">
         </div>
-      </section>
-      <!-- Instructor section -->
-      <section id="instructor" class="bg-primary p-5">
-        <div class="container">
-            <h2 class="text-center text-white">Our Instructor</h2>
-            <p class="lead text-center text-white mb-5">Our instructors all have 15+ years working as a web developer in the industry</p>
-          <div class="row g-4">
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="card bg-light ">
-                <div class="card-body text-center">
-                  <img src="image/Alana Layton.jpg" alt="Instructor picture of Alana Layton" class="rounded-circle mb-6"> 
-                  <h3 class="card-title mb-3 ">Alana Layton</h3>
-                  <p class="card-text">Alana is a Cloud Technologist based out of Seattle, WA and has been working at AWS for over two years. Outside of AWS, you can find her testing her knowledge at bar trivia, watching the latest true crime documentary, or training for a marathon.</p>
-                  <a href="https://twitter.com/lanalayt?lang=en"><i class="fab fa-twitter mx-2"></i></a>
-                  <a href="https://www.facebook.com/alana.layton.7"><i class="fab fa-facebook mx-2"></i></a>
-                  <a href="https://www.instagram.com/alannalayton21/?hl=en"><i class="fab fa-instagram mx-2"></i></a>
-                  <a href="https://www.linkedin.com/in/alanalayton/"><i class="fab fa-linkedin mx-2"></i></a>
-                </div>
-              </div>  
-            </div>
-            <div class="col-lg-3 col-md-6 text-center ">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img src="image/Jonathan Dion.jpg" alt="Instructor picture of Jonathan Dion" class="rounded-circle mb-6"> 
-                  <h3 class="card-title mb-3 ">Jonathan Dion</h3>
-                  <p class="card-text">Jonathan Dion is a senior technical instructor that has been working for AWS for over 2 years living in Toronto. Prior to teaching and lecturing for AWS customers, Jonathan was part of the Solutions Architect team and decided to become a technical instructor to share his passion for AWS and technology.</p>
-                  <a href="https://twitter.com/_jondion?lang=en"><i class="fab fa-twitter mx-2"></i></a>
-                  <a href="https://www.facebook.com/jonathan.dionne.35"><i class="fab fa-facebook mx-2"></i></a>
-                  <a href="https://www.instagram.com/dionjonathn/?hl=en"><i class="fab fa-instagram mx-2"></i></a>
-                  <a href="https://www.linkedin.com/in/jotdion/?originalSubdomain=ca"><i class="fab fa-linkedin mx-2"></i></a>
-                </div>
-              </div>  
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img src="image/Morgan Willis.jpg" alt="Instructor picture of Morgan Willis" class="rounded-circle mb-6"> 
-                  <h3 class="card-title mb-3 ">Morgan Willis</h3>
-                  <p class="card-text">Morgan Willis is a Senior Cloud Technologist based in the US. Morgan has a background in Software Development, technical training, and has earned 6 AWS Certifications. Morgan has always had a strong passion for technology, has a degree in computer science and has held various jobs throughout her IT career.</p>
-                  <a href="https://twitter.com/MorgantWillis?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter mx-2"></i></a>
-                  <a href="https://www.facebook.com/morgan.wills.161"><i class="fab fa-facebook mx-2"></i></a>
-                  <a href="https://www.instagram.com/morganwillis/?hl=en"><i class="fab fa-instagram mx-2"></i></a>
-                  <a href="https://www.coursera.org/instructor/~37505720"><i class="fab fa-linkedin mx-2"></i></a>
-                </div>
-              </div>  
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img src="image/Sean Rinn.jpg" alt="Instructor picture of Sean Rinn" class="rounded-circle mb-6"> 
-                  <h3 class="card-title mb-3 ">Sean Rinn</h3>
-                  <p class="card-text">Sean has been with AWS just over 4 years. In that time, he has been both a Technical Trainer, and an Engineer working on tools used by the Training team. When he's not in front of a computer, he is doing his level best to be outside (much to the enjoyment of his dog, Chief)</p>
-                  <a href="https://twitter.com/s_rinn9?lang=en"><i class="fab fa-twitter mx-2"></i></a>
-                  <a href="https://www.facebook.com/sean.rinn.5"><i class="fab fa-facebook mx-2"></i></a>
-                  <a href="https://www.instagram.com/smrinn/"><i class="fab fa-instagram mx-2"></i></a>
-                  <a href="https://www.linkedin.com/in/seanrinn/"><i class="fab fa-linkedin mx-2"></i></a>
-                </div>
-              </div>  
-            </div>
-          </div>
-        </div>
-      </section>
-
-        <!-- Contact & Map -->
-
-      <section class="p-5">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md">
-              <h2 class="text-center mb-4">Contact Info </h2> 
-              <ul class="list-group list-group-flush lead">
-                <li class="list-group-item">
-                  <span class="fw-bold">Headquarters:</span> 	Mountain View, California, U.S.
-                </li>
-                <li class="list-group-item">
-                  <span class="fw-bold">Helpline Number:</span>  (800) 952-5210
-                </li>
-                <li class="list-group-item">
-                  <span class="fw-bold">Student Phone: </span>  +91 6201984498
-                </li>
-                <li class="list-group-item">
-                  <span class="fw-bold">Enrollment Email:</span>  coursera_official_contact@gmail.com
-                </li>
-                <li class="list-group-item">
-                  <span class="fw-bold">Student Email:</span>  student_email@gmail.com
-                </li>
-              </ul>
-            </div>
-            <div class="col-md">
-               <div id="map"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-        <!-- Footer -->
-      <footer class="p-5 bg-dark text-center text-white position-relative">
-        <div class="container">
-          <p class="lead">Copyright &Copy; 2021 Frontend Bootcamp</p>
-          <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="fas fa-arrow-up"></i> </a>
-        </div>  
-      </footer>
-      <!-- NEW AND HARD -->
-      <!-- Modal -->
-      <div class="modal fade"  id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true" >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you</p>
-            <form>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label"> First Name: </label>
-                <input type="text" class="form-control" id="first-name" />
-              </div>
-              <div class="mb-3">
-                <label for="last-name" class="col-form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last-name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+        <div class="col-lg-6 col-md-6">
+          <div style="text-align: center;" class="box-content">
+            <h1 class="heading-third-box">COMFORT TO THE CORE</h1>
+            <p class="para-third-box">Introducing the new Apple Crisp Macchiato with notes of caramelized  apples, brown sugar and spiced apple drizzle. Available hot or iced.</p>
+            <button type="button" class="btn btn-light first-button third-div-button">Discover your new fave</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Linking JavaScript files of BootStrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <!-- Linking JavaScript files of Mapbox -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <script> mapboxgl.accessToken = 'pk.eyJ1IjoiYWRpdHlhLWt1bWFyLTEyOSIsImEiOiJja3Nzejh3OWYwNGdoMnBzMmJ0eWFxNTg0In0.wndZSDxRN7NMqWvAYZk0gA';
-      var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-122.083855,37.386051],  //longitude latitude
-      zoom:18,
-      });
-      </script>
+
+  <!-- 4th box element --> 
+    <div class="container-fluid mt-4 fouth-box">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 px-0 my-0">
+          <img src="images/img-3.webp" alt="image-3" class="image-1 image-4">
+        </div>
+        <div class="col-lg-6 col-md-6 my-0">
+          <div style="text-align: center;" class="box-content">
+            <h1 class="heading-fourth-box">HEARTY ON THE GO</h1>
+            <p class="para-fourth-box">Tackle your mornings with a warm and toasty protein-packed breakfast like the Bacon, Gouda & Egg Sandwich or the Double-Smoked Bacon, Cheddar & Egg Sandwich.</p>
+            <button type="button" class="btn btn-light fourth-div-button">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5th box element -->
+  <div class="container-fluid mt-4" style="background-color: #D4E9E2">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <img src="images/image-new.jpg" alt="image-4" class="image-1 image-new">
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div style="text-align: center;" class="box-content box-5">
+          <h1 class="heading-fifth-box">TODAY DESERVES DELIVERY</h1>
+          <p class="para-fifth-box">For a limited time, enjoy $0 Delivery Fee on Starbucks orders over $20 on Uber Eats*.
+          </p>
+          <button type="button" class="btn btn-light first-button fifth-div-button">Order now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 6th box element -->
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 p-0 box-6">
+        <img src="images/img-5.jpg" alt="image-5" class="image-1 image-6">
+      </div>
+      <div class="col-lg-6 col-md-6 six-box" style="background-color: #D4E9E2;">
+        <div style="text-align: center;" class="box-content box-para">
+          <h1 class="heading-six-box">Join us in fighting hunger</h1>
+          <p class="para-six-box">September is Hunger Action Month™ and we're proud to be a longtime partner of Feeding America®. Since 2016, we’ve helped donate nearly 34 million meals* to fight hunger – and counting.</p>
+          <button type="button" class="btn btn-light first-button fifth-div-button" >Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p class="last-para">*Terms, taxes and other fees may apply. Fees subject to change. Menu limited. Restricted delivery area. Available in participating locations only. Prices for Starbucks® items purchased through Uber Eats may be higher than posted in stores or as marked. See the Uber Eats app for details. Limited time offer. May not be combined with other offers, discounts or promotions.</p>
+  </div>
+    <!-- last para -->
+    <div>
+      <p class="last-para mb-5">*According to the USDA, 1.2 pounds of food is the equivalent to 1 meal. Nearly 34 million meals donated to Feeding America and other hunger relief organizations.</p>
+    </div>
+
+  <hr style="width:100%; height:2px; background-color:grey; margin-bottom: 3%;">
+
+
+  <!-- acordian -->
+<div class="link-acordian">
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <span style="font-weight: 600; font-size: 1.5rem;">About Us</span> 
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a href="https://www.starbucks.com/about-us/">Our Company</a><br><br>
+          <a href="https://www.starbucks.com/coffee/">Our Coffee</a><br><br>
+          <a href="https://stories.starbucks.com/">Story and News</a><br><br>
+          <a href="https://archive.starbucks.com/">Starbucks Archive</a><br><br>
+          <a href="https://investor.starbucks.com/ir-home/default.aspx">Investor Relations</a><br><br>
+          <a href="https://customerservice.starbucks.com/">Customer Service</a><br><br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <span style="font-weight: 600; font-size: 1.5rem;"> Careers</span> 
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a href="https://www.starbucks.com/careers/working-at-starbucks/culture-and-values">Culture and Values</a><br><br>
+          <a href="https://stories.starbucks.com/stories/inclusion-diversity/">Inclusion, Diversity, and Equity</a><br><br>
+          <a href="https://www.starbucks.com/careers/working-at-starbucks/education">College Achievement Plan</a><br><br>
+          <a href="https://www.starbucks.com/careers/">U.S. Careers</a><br><br>
+          <a href="https://www.starbucks.com/careers/international-careers">International Careers</a><br><br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <span style="font-weight: 600; font-size: 1.5rem;">Social Impact</span> 
+          
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a href="https://www.starbucks.com/responsibility/people">People</a><br><br>
+          <a href="https://www.starbucks.com/responsibility/planet">Planet</a><br><br>
+          <a href="https://www.starbucks.com/responsibility/reporting-hub">Environmental and Social Impact Reporting</a><br><br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <span style="font-weight: 600; font-size: 1.5rem;">For Business Partners</span> 
+          
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a href="https://www.starbucks.com/business/landlord-faq">Landlord Support Center</a><br><br>
+          <a href="https://www.starbucks.com/business/suppliers">Suppliers</a><br><br>
+          <a href="https://www.starbuckscardb2b.com/">Corporate Gift Card Sales</a><br><br>
+          <a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program">Office and Foodservice Coffee</a><br><br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          <span style="font-weight: 600; font-size: 1.5rem;">Order and Pickup</span>
+          
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a href="https://www.starbucks.com/rewards/mobile-apps">Order on the App</a><br><br>
+          <a href="https://www.starbucks.com/menu">Order on the Web</a><br><br>
+          <a href="https://delivery.starbucks.com/">Delivery</a><br><br>
+          <a href="https://www.starbucks.com/ways-to-order/">Order and Pickup Options</a><br><br>
+          <a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="link-column">
+  <div class="container">
+    <div class="col1 link">
+      <h3 class="link-heading link link-heading-1">About us</h3>
+      <a href="https://www.starbucks.com/about-us/">Our Company</a><br><br>
+      <a href="https://www.starbucks.com/coffee/">Our Coffee</a><br><br>
+      <a href="https://stories.starbucks.com/">Story and News</a><br><br>
+      <a href="https://archive.starbucks.com/">Starbucks Archive</a><br><br>
+      <a href="https://investor.starbucks.com/ir-home/default.aspx">Investor Relations</a><br><br>
+      <a href="https://customerservice.starbucks.com/">Customer Service</a><br><br>
+    </div>
+    <div class="col2 link">
+      <h3 class="link-heading link-heading-2">Careers</h3>
+      <a href="https://www.starbucks.com/careers/working-at-starbucks/culture-and-values">Culture and Values</a><br><br>
+      <a href="https://stories.starbucks.com/stories/inclusion-diversity/">Inclusion, Diversity, and Equity</a><br><br>
+      <a href="https://www.starbucks.com/careers/working-at-starbucks/education">College Achievement Plan</a><br><br>
+      <a href="https://www.starbucks.com/careers/">U.S. Careers</a><br><br>
+      <a href="https://www.starbucks.com/careers/international-careers">International Careers</a><br><br>
+    </div>
+    <div class="col3 link">
+      <h3 class="link-heading-3">Social Impact</h3>
+      <a href="https://www.starbucks.com/responsibility/people">People</a><br><br>
+      <a href="https://www.starbucks.com/responsibility/planet">Planet</a><br><br>
+      <a href="https://www.starbucks.com/responsibility/reporting-hub">Environmental and Social Impact Reporting</a><br><br>
+    </div>
+    <div class="col4 link">
+      <h3 class="link-heading-4">For Business Partners</h3>
+      <a href="https://www.starbucks.com/business/landlord-faq">Landlord Support Center</a><br><br>
+      <a href="https://www.starbucks.com/business/suppliers">Suppliers</a><br><br>
+      <a href="https://www.starbuckscardb2b.com/">Corporate Gift Card Sales</a><br><br>
+      <a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program">Office and Foodservice Coffee</a><br><br>
+    </div>
+    <div class="col5 link">
+      <h3 class="link-heading-5">Order and Pickup</h3>
+      <a href="https://www.starbucks.com/rewards/mobile-apps">Order on the App</a><br><br>
+      <a href="https://www.starbucks.com/menu">Order on the Web</a><br><br>
+      <a href="https://delivery.starbucks.com/">Delivery</a><br><br>
+      <a href="https://www.starbucks.com/ways-to-order/">Order and Pickup Options</a><br><br>
+      <a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a><br><br>
+    </div>
+  </div>
+</div>
+<hr style="width:100%; height:2px; background-color:grey; margin-bottom: 3%;">
+
+
+    <!-- icons -->
+    <div class="icon-div"> 
+      <a class="rounded-icon" href="https://open.spotify.com/user/starbucks" ><i class="fab fa-spotify fa-2x "></i></a>
+      <a class="rounded-icon" href="https://www.facebook.com/Starbucks/"><i class="fab fa-facebook fa-2x"></i></a>
+      <a class="rounded-icon" href="https://www.pinterest.com/starbucks/"><i class="fab fa-pinterest fa-2x"></i></a>
+      <a class="rounded-icon" href="https://www.instagram.com/starbucks/"><i class="fab fa-instagram fa-2x"></i></a>
+      <a class="rounded-icon" href="https://www.youtube.com/starbucks"><i class="fab fa-youtube fa-2x"></i></a>
+      <a class="rounded-icon" href="https://twitter.com/starbucks/"><i class="fab fa-twitter-square fa-2x"></i></a>
+    </div>
+    
+    <!-- footer-links -->
+    <br>
+    <div class="footer-flex">
+      <a href="#" class = "footer-a">Privacy Policy<span class="footer-span">|</span></a> 
+      <a href="#" class = "footer-a">Terms of Use <span class="footer-span">|</span></a>
+      <a href="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-70076.pdf" class = "footer-a CaSupply">CA Supply Chain Act<span class="footer-span">|</span></a>
+      <a href="#" class = "footer-a">Submit Your Idea</a>
+    </div>
+  
+    <!-- footer -->
+    <footer class="footer-rights">
+      <p class="footer-para">© 2021 Starbucks Coffee Company. All rights reserved.</p>
+    </footer>
+
+  <!-- Linking JavaScript files of BootStrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

@@ -1,0 +1,1453 @@
+*{
+  border: 0;
+  padding: 0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.logo-img{
+  width: 50px;
+}
+a{
+  font-weight: 750;
+}
+.first-button{
+  border-width: 1px; 
+  border-color: black;
+}
+.first-button:hover{
+  border-width: 1px; 
+  border-color: black;
+  background-color: #f2f0eb;
+}
+.second-button:hover{
+  background-color: #000000; 
+  opacity: 56.0%;
+}
+@media (max-width:320px)
+{
+  .first-para{
+    font-size: 1rem !important;
+  }
+  .first-link{
+    font-weight: 500 !important;
+  }
+  .heading-second-box{
+    font-weight: 700 !important;
+    padding-bottom: 5% !important;
+    font-size: 1.2rem !important;
+  }
+  .box-content{
+    padding: 8% 6% !important;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 4%;
+  }
+  .second-div-botton{
+    color: black; 
+    border-radius: 25px; 
+    font-weight: 500 !important; 
+    background-color: #F2F0EB;
+  }
+  .col-md-6{
+    padding: 0 !important;
+  }
+  .heading-third-box{
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    letter-spacing: 5px !important;
+    margin-bottom: 5% !important;
+  }
+  .para-third-box{
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 1.75 !important;
+    margin-bottom: 12%;
+  }
+  .third-div-button{
+    margin-bottom: 5%;
+  }
+  .heading-fourth-box{
+    font-size: 1.4rem !important;
+    letter-spacing: 5px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10%;
+  }
+  .para-fourth-box{
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    margin-bottom: 10%;
+  }
+  .fourth-div-button{
+    margin-bottom: 5%;
+  }
+  .heading-fifth-box{
+    letter-spacing: 3px;
+    margin-bottom: 8%;
+    font-weight: 600 !important;
+  }
+  .para-fifth-box{
+    font-weight: 500 !important;
+    margin-bottom: 12% !important;
+  }
+  .heading-six-box{
+    margin: 5% 0 ;
+    font-size: 1.5rem !important;
+  }
+  .para-six-box{
+    font-size: 1rem !important;
+  }
+  .fifth-div-button{
+    font-weight: 500 !important;
+  }
+  .last-para{
+    margin: 12% 10% 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600 !important;
+  }
+  .rounded-icon{
+    width:  35px !important;
+    height: 35px !important;
+    background: #191919 !important;
+    color: white;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin: 5% 2% !important;
+  }
+  .icon-div{
+    padding: 2% !important;
+  }
+  .footer-span{
+    display: none;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem !important;
+    margin-right: 0 !important;
+  }
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-para{
+    font-size: 0.75rem;
+  }
+  .link-column{
+    display: none;
+  }
+}
+@media (min-width:321px) and (max-width:376px)
+{
+  .first-box
+  {
+    padding: 9% 6% !important;
+  }
+  .first-para{
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+  }
+  .first-link{
+    font-weight: 500 !important;
+  }
+  .heading-second-box{
+    font-weight: 600 !important;
+    padding-bottom: 5% !important;
+    font-size: 1.7rem !important;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 3.5%;
+  }
+  .box-content{
+    padding: 8% 6% !important;
+  }
+  .second-div-botton{
+    color: black; 
+    border-radius: 25px; 
+    font-weight: 500 !important; 
+    background-color: #F2F0EB;
+    padding: 1% 4%;
+  }
+  .col-md-6{
+    padding: 0 !important;
+  }
+  .heading-third-box{
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    letter-spacing: 5px !important;
+    margin-bottom: 5% !important;
+  }
+  .para-third-box{
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    line-height: 1.75 !important;
+    margin-bottom: 12%;
+  }
+  .third-div-button{
+    margin-bottom: 5%;
+    padding: 1% 4%;
+  }
+  .heading-fourth-box{
+    font-size: 1.8rem !important;
+    letter-spacing: 5px !important;
+    font-weight: 700 !important;
+    margin-bottom: 10%;
+  }
+  .para-fourth-box{
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 10%;
+  }
+  .fourth-div-button{
+    margin-bottom: 5%;
+    padding: 1% 4%;
+  }
+  .heading-fifth-box{
+    letter-spacing: 3px;
+    margin-bottom: 8%;
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+  }
+  .para-fifth-box{
+    font-weight: 500 !important;
+    margin-bottom: 12% !important;
+    font-size: 1.5rem !important;
+  }
+  .heading-six-box{
+    margin: 5% 0 7%;
+    font-size: 1.5rem !important;
+    color: #000000;
+  }
+  .para-six-box{
+    font-size: 1rem !important;
+    margin-bottom: 8%;
+  }
+  .fifth-div-button{
+    font-weight: 500 !important;
+    padding: 1% 4%;
+  }
+  .last-para{
+    margin: 12% 8% 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600 !important;
+  }
+  .rounded-icon{
+    width:  41px !important;
+    height: 41px !important;
+    background: #191919 !important;
+    color: white;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin: 5% 2% !important;
+  }
+  .icon-div{
+    padding: 2% !important;
+  }
+  .footer-span{
+    display: none;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem !important;
+    margin-right: 0 !important;
+    font-weight: 500;
+  }
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-para{
+    font-size: 0.90rem;
+  }
+  .link-column{
+    display: none !important;
+  }
+}
+@media (min-width:377px) and (max-width:426px)
+{
+  .first-box
+  {
+    padding: 9% 6% !important;
+  }
+  .first-para{
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 0;
+  }
+  .first-link{
+    font-weight: 500 !important;
+  }
+  .heading-second-box{
+    font-weight: 00 !important;
+    padding-bottom: 5% !important;
+    font-size: 1.9rem !important;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 3.5%;
+    font-size: 1.2rem;
+  }
+  .box-content{
+    padding: 8% 6% !important;
+  }
+  .second-div-botton{
+    color: black; 
+    border-radius: 25px; 
+    font-weight: 500 !important; 
+    background-color: #F2F0EB;
+    padding: 1% 4%;
+  }
+  .col-md-6{
+    padding: 0 !important;
+  }
+  .heading-third-box{
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    letter-spacing: 4px !important;
+    margin-bottom: 5% !important;
+  }
+  .para-third-box{
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    line-height: 1.75 !important;
+    margin-bottom: 10%;
+  }
+  .third-div-button{
+    margin-bottom: 5%;
+    padding: 1% 4%;
+  }
+  .heading-fourth-box{
+    font-size: 1.8rem !important;
+    letter-spacing: 4px !important;
+    font-weight: 700 !important;
+    margin-bottom: 10%;
+    padding: 0 2%;
+  }
+  .para-fourth-box{
+    font-size: 1.4rem !important;
+    font-weight: 400 !important;
+    margin-bottom: 10%;
+  }
+  .fourth-div-button{
+    margin-bottom: 5%;
+    padding: 1% 4%;
+  }
+  .heading-fifth-box{
+    letter-spacing: 3px;
+    margin-bottom: 8%;
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+  }
+  .para-fifth-box{
+    font-weight: 500 !important;
+    margin-bottom: 8% !important;
+    font-size: 1.4rem !important;
+  }
+  .heading-six-box{
+    margin: 5% 0 7%;
+    font-size: 1.8rem !important;
+    color: #000000;
+  }
+  .para-six-box{
+    font-size: 1.2rem !important;
+    margin-bottom: 8%;
+  }
+  .fifth-div-button{
+    font-weight: 500 !important;
+    padding: 1% 4%;
+  }
+  .last-para{
+    margin: 12% 8% 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600 !important;
+  }
+  .rounded-icon{
+    width:  48px !important;
+    height: 48px !important;
+    background: #191919 !important;
+    color: white;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin: 3% 2% !important;
+  }
+  .icon-div{
+    padding: 2% !important;
+  }
+  .footer-span{
+    display: none;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem !important;
+    margin-right: 0 !important;
+    font-weight: 500;
+  }
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-para{
+    font-size: 1rem;
+  }
+  .link-column{
+    display: none !important;
+  }
+}
+@media (min-width:427px) and (max-width:768px)
+{
+  .first-box
+  {
+    padding: 5% 25% !important;
+  }
+  .first-para{
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0;
+  }
+  .first-link{
+    font-weight: 600 !important;
+  }
+  .image-1
+  {
+    margin: 12% 0;
+  }
+  .heading-second-box{
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+    margin: 0% 10% 8%;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 4.5% 6%;
+    font-size: 1.2rem;
+  }
+  .box-content{
+    padding: 8% 6% !important;
+  }
+  .second-div-botton{
+    color: black; 
+    border-radius: 25px; 
+    font-weight: 500 !important; 
+    background-color: #F2F0EB;
+    padding: 1% 4%;
+    font-size: 1.1rem;
+  }
+  .col-md-6{
+    padding: 0 !important;
+  }
+  .heading-third-box{
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 5% !important;
+  }
+  .para-third-box{
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    margin: 0 8% 10%;
+  }
+  .third-div-button{
+    margin-bottom: 5%;
+    padding: 1% 4%;
+  }
+  .image-3
+  {
+    margin: 15% 0;
+  }
+  .heading-fourth-box{
+    font-size: 2rem !important;
+    letter-spacing: 4px !important;
+    font-weight: 700 !important;
+    margin: 0 15% 10%;
+    padding: 0 2%;
+  }
+  .para-fourth-box{
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    margin: 0 7% 10%;
+    line-height: 1.3;
+  }
+  .image-4
+  {
+    margin: 18.5% 0;
+  }
+  .fourth-div-button{
+    margin-bottom: 5%;
+    padding: 1% 4%;
+  }
+  .heading-fifth-box{
+    letter-spacing: 3px;
+    margin:  0 10% 8%;
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+  }
+  .para-fifth-box{
+    font-weight: 500 !important;
+    margin-bottom: 8% !important;
+    font-size: 1.6rem !important;
+  }
+  .box-6{
+    background-color:#d4e9e2 ;
+  }
+  .heading-six-box{
+    margin: 0% 10% 7%;
+    font-size: 2rem !important;
+    color: #000000;
+  }
+  .para-six-box{
+    font-size: 1.2rem !important;
+    margin: 0 10% 8%;
+  }
+  .fifth-div-button{
+    font-weight: 500 !important;
+    padding: 1% 4%;
+  }
+  .image-6
+  {
+    margin: 26% 0;
+  }
+  .last-para{
+    margin: 8% 25% 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600 !important;
+  }
+  .rounded-icon{
+    width:  60px !important;
+    height: 60px !important;
+    background: #191919 !important;
+    color: white;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin: 3% 2% !important;
+  }
+  .icon-div{
+    padding:2% !important;
+    margin: 0 15%;
+  }
+  .footer-span{
+    display: none;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem !important;
+    margin-right: 0 !important;
+    font-weight: 500;
+    padding-left: 2%;
+  }
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-para{
+    font-size: 1.2rem;
+    margin: 5% 15% ;
+  }
+  .link-column{
+    display: none !important;
+  }
+}
+@media(min-width:769px) and (max-width:1025px)
+{
+  .image-1
+  {
+    max-width: 100%;
+    margin: 15% 0;
+  }
+  .first-div{
+    margin-top: 0;
+    padding: 0 !important;
+  }
+  .first-box
+  {
+    background-color: #D8E8E3 ;
+    text-align: center;
+    padding: 2rem 20% !important;
+  }
+  .first-para{
+    font-size: 1.40rem !important;
+    line-height: 1.75 !important;
+    text-align: center;
+    font-family: 'Montserrat-Semi-bold','Arial','sans-serif';
+    font-weight: 500 !important;
+  }
+  .first-link
+  {
+    font-weight: 500;
+    text-decoration-line: underline !important;
+  }
+  .heading-second-box
+  {
+    margin: 0% 10% 10%;
+    font-size: 2rem !important;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    font-weight: 700 !important;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 10% 8%;
+    font-size: 1.5rem;
+  }
+  .second-div{
+    background-color: #f2f0eb
+  }
+  .second-div-botton
+  {
+    padding: 3%;
+  }
+  .box-content{
+    padding: 8%  1.5rem 0 !important;
+  }
+  .heading-third-box
+  {
+    letter-spacing: 4px !important; 
+    font-size: 2.5rem !important; 
+    font-weight: 700 !important;
+    color: #1E3932;
+    margin: 0 15% 8% !important;
+    line-height: 1.2;
+  }
+  .para-third-box{
+    font-weight: 300; 
+    font-size: 1.6rem !important;
+    margin: 0 6% 10%;
+    letter-spacing: 1.5px !important;
+  }
+  .image-3{
+    margin: 10% 0 5% !important;
+  }
+  .heading-fourth-box
+  {
+    color: white; 
+    letter-spacing: 4px !important; 
+    font-size: 2.5rem !important; 
+    font-weight: 500 !important;
+    margin: 0 10% 9% !important;
+  }
+  .para-fourth-box{
+    color: white; 
+    font-weight: 400 !important; 
+    font-size: 1.8rem !important; 
+    text-align:center;
+    margin: 0 0 12% !important;
+  }
+  .image-4{
+    margin: 0 !important;
+    padding: 15% 0% !important;
+  }
+  .heading-fifth-box{
+    font-size: 2.5rem !important; 
+    font-weight: 700 !important; 
+    margin: 0 15% 7% !important;
+    padding: 0 5% !important;
+    line-height: 1.3;
+    letter-spacing: 3px;
+  }
+  .para-fifth-box{
+    font-size: 1.7rem !important; 
+    font-weight: 600 !important;
+    margin: 0 10% 8% !important;
+    padding: 0 5% !important;
+  }
+  .image-new
+  {
+    margin: 10% 0;
+  }
+  .col-md-6
+  {
+    padding: 0;
+  }
+  .fifth-div-button{
+    font-weight: 500;
+  }
+  .box-5{
+    padding: 10% 0 10% !important;
+  }
+  .box-6{
+    background-color:#D4E9E2;
+  }
+  .heading-six-box
+  {
+    font-size: 2.5rem !important; 
+    font-weight: 600 !important;
+    padding: 0 15% 8% !important;
+    line-height: 1.5;
+  }
+  .para-six-box
+  {
+    font-size: 1.6rem !important; 
+    font-weight: 500 !important;
+    padding: 0 12% 8% !important;
+  }
+  .image-6
+  {
+    margin: 33% 0;
+  }
+  .box-para{
+    padding: 12% 0 8% !important;
+  }
+  .last-para
+  {
+    margin: 8% 22% 0%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .link-acordian
+  {
+    display: none;
+  }
+  .container
+  {
+    display: flex;
+  }
+  .container div{
+    padding: 2%;
+  }
+  .col1
+  {
+    flex: 1;
+  }
+  .col2
+  {
+    flex: 1;
+  }
+  .col3
+  {
+    flex: 1.5;
+  }
+  .col4
+  {
+    flex: 1.5;
+  }
+  .col5
+  {
+    flex: 1.5;
+  }
+  .link-heading
+  {
+    margin-bottom: 40% !important;
+  }
+  .link-heading-3
+  {
+    margin-bottom: 28%;
+  }
+  .link-heading-4
+  {
+    margin-bottom: 8%;
+  }
+  .link-heading-5
+  {
+    margin-bottom: 8%;
+  }
+  .link a 
+  {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .link a:hover
+  {
+    color: #363233;
+  }
+  .rounded-icon{
+    margin: 0 3% !important;
+    width:  65px !important;
+    height: 65px !important;
+    background: #191919 !important;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .icon-div
+  {
+    padding: 3% 15%;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-left: 3%;
+  }
+  .footer-flex{
+    display: block !important;
+    margin: 0 5% 5% !important;
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .footer-para
+  {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .footer-span
+  {
+    padding-left: 50px !important;
+  }
+}
+@media (min-width : 1025px) and (max-width:1441px)
+{
+  .image-1
+  {
+    max-width: 100%;
+  }
+  .first-div{
+    margin-top: 0;
+    padding: 0 !important;
+  }
+  .first-box
+  {
+    background-color: #D8E8E3 ;
+    text-align: center;
+    padding: 2rem 18% !important;
+  }
+  .first-para{
+    font-size: 1.35rem !important;
+    line-height: 1.75 !important;
+    text-align: center;
+    font-family: 'Montserrat-Semi-bold','Arial','sans-serif';
+    font-weight: 500 !important;
+  }
+  .first-link
+  {
+    font-weight: 500;
+    text-decoration-line: underline !important;
+  }
+  .heading-second-box
+  {
+    margin: 8% 10% 5%;
+    font-size: 2rem !important;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    font-weight: 700 !important;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 10% 4%;
+    font-size: 1.5rem;
+  }
+  .second-div{
+    background-color: #f2f0eb
+  }
+  .second-div-botton
+  {
+    padding: 1.5%;
+  }
+  .box-content{
+    padding: 8%  1.5rem 0 !important;
+  }
+  .heading-third-box
+  {
+    letter-spacing: 4px !important; 
+    font-size: 2.7rem !important; 
+    font-weight: 700 !important;
+    color: #1E3932;
+    margin: 10% 20% 4% !important;
+    line-height: 1.4;
+  }
+  .para-third-box{
+    font-weight: 300; 
+    font-size: 1.6rem !important;
+    margin: 0 6% 5%;
+    letter-spacing: 1.5px !important;
+  }
+  .heading-fourth-box
+  {
+    color: white; 
+    letter-spacing: 4px !important; 
+    font-size: 2.8rem !important; 
+    font-weight: 500 !important;
+    margin: 5% 15% !important;
+    line-height: 1.35;
+  }
+  .para-fourth-box{
+    color: white; 
+    font-weight: 400 !important; 
+    font-size: 1.8rem !important; 
+    text-align:center;
+    margin: 0 8% 7% !important;
+  }
+  .heading-fifth-box{
+    font-size: 3rem !important; 
+    font-weight: 700 !important; 
+    margin: 10% 18% 4% !important;
+    padding: 0 5% !important;
+    line-height: 1.3;
+    letter-spacing: 6px;
+  }
+  .para-fifth-box{
+    font-size: 1.7rem !important; 
+    font-weight: 600 !important;
+    margin: 0 10% 6% !important;
+    padding: 0 5% !important;
+  }
+  .col-md-6
+  {
+    padding: 0 !important;
+  }
+  .fifth-div-button{
+    font-weight: 500;
+  }
+  .box-5{
+    padding: 10% 0 8% !important;
+  }
+  .box-6{
+    background-color:#D4E9E2;
+  }
+  .heading-six-box
+  {
+    font-size: 2rem !important; 
+    font-weight: 600 !important;
+    padding: 10% 15% 2% !important;
+    line-height: 1.5;
+  }
+  .para-six-box
+  {
+    font-size: 1.2rem !important; 
+    font-weight: 500 !important;
+    padding: 0 12% 4% !important;
+  }
+  .box-para{
+    padding: 1% 0 8% !important;
+  }
+  .last-para
+  {
+    margin: 8% 22% 0%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .link-acordian
+  {
+    display: none;
+  }
+  .container
+  {
+    display: flex;
+  }
+  .container div{
+    padding: 2%;
+  }
+  .col1
+  {
+    flex: 1;
+  }
+  .col2
+  {
+    flex: 1.2;
+  }
+  .col3
+  {
+    flex: 1.3;
+  }
+  .col4
+  {
+    flex: 1.5;
+  }
+  .col5
+  {
+    flex: 1.5;
+  }
+  .link-heading
+  {
+    margin-bottom: 40% !important;
+  }
+  .link-heading-2
+  {
+    margin-bottom: 34% !important;
+  }
+  .link-heading-3
+  {
+    margin-bottom: 32%;
+  }
+  .link-heading-4
+  {
+    margin-bottom: 14%;
+  }
+  .link-heading-5
+  {
+    margin-bottom: 27%;
+  }
+  .link a 
+  {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .link a:hover
+  {
+    color: #363233;
+  }
+  .rounded-icon{
+    margin: 0 3% !important;
+    width:  85px !important;
+    height: 85px !important;
+    background: #191919 !important;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .icon-div
+  {
+    padding: 3% 15%;
+    margin-left: 5%;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-left: 3%;
+  }
+  .footer-flex{
+    display: block !important;
+    margin: 0 10% 5% !important;
+
+  }
+  .footer-para
+  {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .footer-span
+  {
+    padding-left: 50px !important;
+  }
+}
+@media (min-width : 1441px) and (max-width:2561px)
+{
+  .div-2560
+  {
+    margin: 0 15%;
+  }
+  .nav-2560
+  {
+    margin-left: 12% !important;
+    margin-right: 15% !important;
+  }
+  .image-1
+  {
+    max-width: 100%;
+  }
+  .first-div{
+    margin-top: 0;
+    padding: 0 !important;
+  }
+  .first-box
+  {
+    background-color: #D8E8E3 ;
+    text-align: center;
+    padding: 2rem 18% !important;
+  }
+  .first-para{
+    font-size: 1.35rem !important;
+    line-height: 1.75 !important;
+    text-align: center;
+    font-family: 'Montserrat-Semi-bold','Arial','sans-serif';
+    font-weight: 500 !important;
+  }
+  .first-link
+  {
+    font-weight: 500;
+    text-decoration-line: underline !important;
+  }
+  .heading-second-box
+  {
+    margin: 8% 10% 5%;
+    font-size: 2rem !important;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    font-weight: 700 !important;
+  }
+  .para-second-box{
+    font-weight: 500 !important;
+    margin: 0 10% 4%;
+    font-size: 1.5rem;
+  }
+  .second-div{
+    background-color: #f2f0eb
+  }
+  .second-div-botton
+  {
+    padding: 1.5%;
+  }
+  .box-content{
+    padding: 8%  1.5rem 0 !important;
+  }
+  .heading-third-box
+  {
+    letter-spacing: 4px !important; 
+    font-size: 2.7rem !important; 
+    font-weight: 700 !important;
+    color: #1E3932;
+    margin: 10% 20% 4% !important;
+    line-height: 1.4;
+  }
+  .para-third-box{
+    font-weight: 300; 
+    font-size: 1.6rem !important;
+    margin: 0 6% 5%;
+    letter-spacing: 1.5px !important;
+  }
+  .heading-fourth-box
+  {
+    color: white; 
+    letter-spacing: 4px !important; 
+    font-size: 2.8rem !important; 
+    font-weight: 500 !important;
+    margin: 5% 15% !important;
+    line-height: 1.35;
+  }
+  .para-fourth-box{
+    color: white; 
+    font-weight: 400 !important; 
+    font-size: 1.8rem !important; 
+    text-align:center;
+    margin: 0 8% 7% !important;
+  }
+  .heading-fifth-box{
+    font-size: 3rem !important; 
+    font-weight: 700 !important; 
+    margin: 10% 18% 4% !important;
+    padding: 0 5% !important;
+    line-height: 1.3;
+    letter-spacing: 6px;
+  }
+  .para-fifth-box{
+    font-size: 1.7rem !important; 
+    font-weight: 600 !important;
+    margin: 0 10% 6% !important;
+    padding: 0 5% !important;
+  }
+  .col-md-6
+  {
+    padding: 0 !important;
+  }
+  .fifth-div-button{
+    font-weight: 500;
+  }
+  .box-5{
+    padding: 10% 0 8% !important;
+  }
+  .box-6{
+    background-color:#D4E9E2;
+  }
+  .heading-six-box
+  {
+    font-size: 2rem !important; 
+    font-weight: 600 !important;
+    padding: 10% 15% 2% !important;
+    line-height: 1.5;
+  }
+  .para-six-box
+  {
+    font-size: 1.2rem !important; 
+    font-weight: 500 !important;
+    padding: 0 12% 4% !important;
+  }
+  .box-para{
+    padding: 1% 0 8% !important;
+  }
+  .last-para
+  {
+    margin: 8% 22% 0%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .link-acordian
+  {
+    display: none;
+  }
+  .container
+  {
+    display: flex;
+  }
+  .container div{
+    padding: 2%;
+  }
+  .col1
+  {
+    flex: 1;
+  }
+  .col2
+  {
+    flex: 1.7;
+  }
+  .col3
+  {
+    flex: 1.5;
+  }
+  .col4
+  {
+    flex: 1.7;
+  }
+  .col5
+  {
+    flex: 1.7;
+  }
+  .link-heading
+  {
+    margin-bottom: 25% !important;
+  }
+  .link-heading-2
+  {
+    margin-bottom: 15% !important;
+  }
+  .link-heading-3
+  {
+    margin-bottom: 18%;
+  }
+  .link-heading-4
+  {
+    margin-bottom: 3%;
+  }
+  .link-heading-5
+  {
+    margin-bottom: 15%;
+  }
+  .link a 
+  {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .link a:hover
+  {
+    color: #363233;
+  }
+  .rounded-icon{
+    margin: 0 3% !important;
+    width:  115px !important;
+    height: 115px !important;
+    background: #191919 !important;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border:none;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .icon-div
+  {
+    padding: 3% 15%;
+    margin-left: 5%;
+  }
+  .footer-a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-left: 3%;
+  }
+  .footer-flex{
+    display: block !important;
+    margin: 0 20% 5% !important;
+  }
+  .footer-para
+  {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .footer-span
+  {
+    padding-left: 50px !important;
+  }
+}
+.first-div{
+  margin: 0;
+  padding: 0 ;
+}
+.first-box
+{
+  background-color: #D8E8E3;
+  text-align: center;
+  padding: 2rem 10% ;
+}
+.first-link
+{
+  color: black;
+}
+.first-link:hover
+{
+  color: black;
+  text-decoration: none;
+}
+
+/* 2nd box 1st grid */
+.image-1
+{
+  max-width: 100%;
+  height: auto;
+}
+.second-div{
+  background-color: #f2f0eb
+}
+.second-div-botton{
+  color: black; 
+  border-radius: 25px; 
+  font-weight: 700; 
+  background-color: #F2F0EB;
+}
+.second-div-botton:hover{
+  background-color: #f7f7f7;
+}
+.box-2{
+  background-color: #f2f0eb;
+}
+.third-div-button{
+  color: black; 
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: #EBDBC8;
+}
+.third-div-button:hover{
+  background-color: #f2f0eb;
+}
+.heading-third-box
+{
+  color: #1E3932;
+}
+.para-third-box{
+  font-weight: 500; 
+  font-size: 1.5rem;
+}
+.third-box{
+  background-color: #EBDBC8;
+}
+.heading-fourth-box
+{
+  color: white; 
+}
+.para-fourth-box{
+  color: white; 
+}
+.fouth-box{
+  background-color: #1E3932;
+}
+.fourth-div-button{
+  border-radius: 25px; 
+  border-color: white; 
+  background-color: #1E3932; 
+  color: white;
+  font-weight: 700;
+}
+.fourth-div-button:hover{
+  background-color: #182E28;
+  color: white;
+}
+.heading-fifth-box{
+  font-size: 1.7rem; 
+  font-weight: 600; 
+}
+.para-fifth-box{
+  font-size: 1.2rem; 
+  font-weight: 500;
+}
+.fifth-div-button
+{
+  background-color: #D4E9E2;
+  color: black; 
+  border-radius: 25px; 
+  font-weight: 700;
+}
+.fifth-div-button:hover{
+  background-color:#c3e0d7;
+}
+.heading-six-box
+{
+  font-size: 1.5rem; 
+  font-weight: 600;
+}
+.para-six-box
+{
+  font-size: 1.2rem; 
+  font-weight: 500;
+}
+.six-box{
+  padding: 0;
+}
+.six-button
+{
+  color: black; 
+  border-radius: 25px;
+}
+.accordion-body a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 3%;
+}
+.accordion-body a:hover{
+  text-decoration: underline;
+}
+.rounded-icon
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.rounded-icon.hover{
+  background: #363233;
+}
+.footer-a{
+  margin: 0 0.5rem 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+.footer-a:hover{
+  text-decoration: underline;
+  color: black;
+}
