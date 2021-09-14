@@ -1266,8 +1266,8 @@ a{
   }
   .rounded-icon{
     margin: 0 3% !important;
-    width:  115px !important;
-    height: 115px !important;
+    width:  65px !important;
+    height: 65px !important;
     background: #191919 !important;
     color: white;
     display: inline-flex;
