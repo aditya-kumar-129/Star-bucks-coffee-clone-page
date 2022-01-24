@@ -2,7 +2,7 @@ Hii everyone this is just a clone RESPONSIIVE web page of Star Buck main page ht
 <br>
 Have a look on the deployment:- https://star-bucks-coffee-clone-page.vercel.app/
 <br>
-Hii this webPage is just for practice purpose
+This webPage is just for practice purpose
 <br>
 All the order and other Hyperlinks attached to this web page will directly lead to the official webpage of Star Buck
 <br>
