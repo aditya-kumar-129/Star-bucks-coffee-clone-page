@@ -7,7 +7,5 @@ This webPage is just for practice purpose
 All the order and other Hyperlinks attached to this web page will directly lead to the official webpage of Star Buck
 <br>
 If by chance StarBuck see this 
-<br>
 please don't sue me
-<br>
 😅😅😅😅
